@@ -125,19 +125,33 @@ CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
-CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o: CMakeFiles/unit_tests.dir/flags.make
-CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o: ../src/cpu_implementations/hadamard_product.cpp
-CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o -MF CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o.d -o CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o -c /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/hadamard_product.cpp
+CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o: ../src/cuda_implementations/vector_sum.cu
+CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o"
+	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o -MF CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o.d -x cu -c /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/vector_sum.cu -o CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o
 
-CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/hadamard_product.cpp > CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.i
+CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
 
-CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/hadamard_product.cpp -o CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.s
+CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o: ../src/cpu_implementations/cpu_matrix_lib.cpp
+CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o -MF CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o.d -o CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o -c /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/cpu_matrix_lib.cpp
+
+CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/cpu_matrix_lib.cpp > CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.i
+
+CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/cpu_matrix_lib.cpp -o CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s
 
 # Object files for target unit_tests
 unit_tests_OBJECTS = \
@@ -145,7 +159,8 @@ unit_tests_OBJECTS = \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o" \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o" \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o" \
-"CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o"
+"CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o" \
+"CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o"
 
 # External object files for target unit_tests
 unit_tests_EXTERNAL_OBJECTS =
@@ -154,10 +169,11 @@ unit_tests: CMakeFiles/unit_tests.dir/src/unit_tests.cpp.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o
-unit_tests: CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o
+unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o
+unit_tests: CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o
 unit_tests: CMakeFiles/unit_tests.dir/build.make
 unit_tests: CMakeFiles/unit_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable unit_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -11,7 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/hadamard_product.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o.d"
   "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/matrix_multiplication.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o.d"
   "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/vector_addition.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o.d"
-  "/home/animated/Projects/CudaMatrixLib/src/cpu_implementations/hadamard_product.cpp" "CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o" "gcc" "CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o.d"
+  "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/vector_sum.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o.d"
+  "/home/animated/Projects/CudaMatrixLib/src/cpu_implementations/cpu_matrix_lib.cpp" "CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o" "gcc" "CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o.d"
   "/home/animated/Projects/CudaMatrixLib/src/unit_tests.cpp" "CMakeFiles/unit_tests.dir/src/unit_tests.cpp.o" "gcc" "CMakeFiles/unit_tests.dir/src/unit_tests.cpp.o.d"
   )
 

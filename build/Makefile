@@ -142,32 +142,32 @@ unit_tests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/build
 .PHONY : unit_tests/fast
 
-src/cpu_implementations/hadamard_product.o: src/cpu_implementations/hadamard_product.cpp.o
-.PHONY : src/cpu_implementations/hadamard_product.o
+src/cpu_implementations/cpu_matrix_lib.o: src/cpu_implementations/cpu_matrix_lib.cpp.o
+.PHONY : src/cpu_implementations/cpu_matrix_lib.o
 
 # target to build an object file
-src/cpu_implementations/hadamard_product.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/hadamard_product.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.o
-.PHONY : src/cpu_implementations/hadamard_product.cpp.o
+src/cpu_implementations/cpu_matrix_lib.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o
+.PHONY : src/cpu_implementations/cpu_matrix_lib.cpp.o
 
-src/cpu_implementations/hadamard_product.i: src/cpu_implementations/hadamard_product.cpp.i
-.PHONY : src/cpu_implementations/hadamard_product.i
+src/cpu_implementations/cpu_matrix_lib.i: src/cpu_implementations/cpu_matrix_lib.cpp.i
+.PHONY : src/cpu_implementations/cpu_matrix_lib.i
 
 # target to preprocess a source file
-src/cpu_implementations/hadamard_product.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/hadamard_product.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.i
-.PHONY : src/cpu_implementations/hadamard_product.cpp.i
+src/cpu_implementations/cpu_matrix_lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/cpu_matrix_lib.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.i
+.PHONY : src/cpu_implementations/cpu_matrix_lib.cpp.i
 
-src/cpu_implementations/hadamard_product.s: src/cpu_implementations/hadamard_product.cpp.s
-.PHONY : src/cpu_implementations/hadamard_product.s
+src/cpu_implementations/cpu_matrix_lib.s: src/cpu_implementations/cpu_matrix_lib.cpp.s
+.PHONY : src/cpu_implementations/cpu_matrix_lib.s
 
 # target to generate assembly for a file
-src/cpu_implementations/hadamard_product.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/hadamard_product.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/hadamard_product.cpp.s
-.PHONY : src/cpu_implementations/hadamard_product.cpp.s
+src/cpu_implementations/cpu_matrix_lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s
+.PHONY : src/cpu_implementations/cpu_matrix_lib.cpp.s
 
 src/cuda_implementations/hadamard_product.o: src/cuda_implementations/hadamard_product.cu.o
 .PHONY : src/cuda_implementations/hadamard_product.o
@@ -250,6 +250,33 @@ src/cuda_implementations/vector_addition.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.s
 .PHONY : src/cuda_implementations/vector_addition.cu.s
 
+src/cuda_implementations/vector_sum.o: src/cuda_implementations/vector_sum.cu.o
+.PHONY : src/cuda_implementations/vector_sum.o
+
+# target to build an object file
+src/cuda_implementations/vector_sum.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/vector_sum.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o
+.PHONY : src/cuda_implementations/vector_sum.cu.o
+
+src/cuda_implementations/vector_sum.i: src/cuda_implementations/vector_sum.cu.i
+.PHONY : src/cuda_implementations/vector_sum.i
+
+# target to preprocess a source file
+src/cuda_implementations/vector_sum.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/vector_sum.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.i
+.PHONY : src/cuda_implementations/vector_sum.cu.i
+
+src/cuda_implementations/vector_sum.s: src/cuda_implementations/vector_sum.cu.s
+.PHONY : src/cuda_implementations/vector_sum.s
+
+# target to generate assembly for a file
+src/cuda_implementations/vector_sum.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/vector_sum.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.s
+.PHONY : src/cuda_implementations/vector_sum.cu.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -308,9 +335,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CudaMatrixLib"
 	@echo "... unit_tests"
-	@echo "... src/cpu_implementations/hadamard_product.o"
-	@echo "... src/cpu_implementations/hadamard_product.i"
-	@echo "... src/cpu_implementations/hadamard_product.s"
+	@echo "... src/cpu_implementations/cpu_matrix_lib.o"
+	@echo "... src/cpu_implementations/cpu_matrix_lib.i"
+	@echo "... src/cpu_implementations/cpu_matrix_lib.s"
 	@echo "... src/cuda_implementations/hadamard_product.o"
 	@echo "... src/cuda_implementations/hadamard_product.i"
 	@echo "... src/cuda_implementations/hadamard_product.s"
@@ -320,6 +347,9 @@ help:
 	@echo "... src/cuda_implementations/vector_addition.o"
 	@echo "... src/cuda_implementations/vector_addition.i"
 	@echo "... src/cuda_implementations/vector_addition.s"
+	@echo "... src/cuda_implementations/vector_sum.o"
+	@echo "... src/cuda_implementations/vector_sum.i"
+	@echo "... src/cuda_implementations/vector_sum.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

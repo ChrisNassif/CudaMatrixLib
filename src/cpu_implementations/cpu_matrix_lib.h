@@ -6,7 +6,8 @@
 
 namespace CPUMatrixLib {
     std::vector<float> hadamard_product(std::vector<float> vector1, std::vector<float> vector2);
-    // std::vector<float> vector_addition(std::vector<float> vector1, std::vector<float> vector2);
+    std::vector<float> vector_addition(std::vector<float> vector1, std::vector<float> vector2);
+    float vector_sum(std::vector<float> vector);
 }
 
 #endif

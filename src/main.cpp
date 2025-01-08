@@ -1,6 +1,6 @@
 #include "cpu_implementations/cpu_matrix_lib.h"
 #include "cuda_implementations/cuda_matrix_lib.h"
-#include "utils/printing_utils.hpp"
+#include "utils/helper_function_library.hpp"
 
 int main( void ) {
 
