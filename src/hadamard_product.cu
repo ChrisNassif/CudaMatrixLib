@@ -1,6 +1,5 @@
 #include <cuda.h>
-#include <vector> 
-#include <iostream>
+#include "cuda_matrix_lib.cuh"
 #include <chrono>
 
 
@@ -63,34 +62,19 @@ std::vector<float> hadamard_product(std::vector<float> vector1, std::vector<floa
 
 
 
+// int main( void ) {
 
-void print_vector(std::vector<float> vector) {
+//     int vector_size = 100000;
+//     std::vector<float> vector1(vector_size, 0);
+//     std::vector<float> vector2(vector_size, 0);
 
-    std::cout << "[";
-    int index;
-    for (index = 0; index < vector.size(); index++) {
-        if (index == vector.size() - 1) {
-            std::cout << vector[index] << "]\n";
-            continue;
-        }
-        std::cout << vector[index] << ", ";
-    }
-}
-
-
-int main( void ) {
-
-    int vector_size = 100000;
-    std::vector<float> vector1(vector_size, 0);
-    std::vector<float> vector2(vector_size, 0);
-
-    int index;
-    for (index = 0; index < vector_size; index++) {
-        vector1[index] = (float)(rand() % 10);
-        vector2[index] = (float)(rand() % 10);
-    }
+//     int index;
+//     for (index = 0; index < vector_size; index++) {
+//         vector1[index] = (float)(rand() % 10);
+//         vector2[index] = (float)(rand() % 10);
+//     }
     
-    print_vector(hadamard_product(vector1, vector2));
+//     print_vector(hadamard_product(vector1, vector2));
 
-    // return 0;
-}
+//     // return 0;
+// }
