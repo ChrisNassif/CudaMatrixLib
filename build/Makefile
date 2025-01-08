@@ -129,6 +129,67 @@ CudaMatrixLib/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/build
 .PHONY : CudaMatrixLib/fast
 
+#=============================================================================
+# Target rules for targets named CPUMatrixLib
+
+# Build rule for target.
+CPUMatrixLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CPUMatrixLib
+.PHONY : CPUMatrixLib
+
+# fast build rule for target.
+CPUMatrixLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/build
+.PHONY : CPUMatrixLib/fast
+
+cpu_implementations/hadamard_product.o: cpu_implementations/hadamard_product.cpp.o
+.PHONY : cpu_implementations/hadamard_product.o
+
+# target to build an object file
+cpu_implementations/hadamard_product.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/cpu_implementations/hadamard_product.cpp.o
+.PHONY : cpu_implementations/hadamard_product.cpp.o
+
+cpu_implementations/hadamard_product.i: cpu_implementations/hadamard_product.cpp.i
+.PHONY : cpu_implementations/hadamard_product.i
+
+# target to preprocess a source file
+cpu_implementations/hadamard_product.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/cpu_implementations/hadamard_product.cpp.i
+.PHONY : cpu_implementations/hadamard_product.cpp.i
+
+cpu_implementations/hadamard_product.s: cpu_implementations/hadamard_product.cpp.s
+.PHONY : cpu_implementations/hadamard_product.s
+
+# target to generate assembly for a file
+cpu_implementations/hadamard_product.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/cpu_implementations/hadamard_product.cpp.s
+.PHONY : cpu_implementations/hadamard_product.cpp.s
+
+cpu_implementations/main.o: cpu_implementations/main.cpp.o
+.PHONY : cpu_implementations/main.o
+
+# target to build an object file
+cpu_implementations/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/cpu_implementations/main.cpp.o
+.PHONY : cpu_implementations/main.cpp.o
+
+cpu_implementations/main.i: cpu_implementations/main.cpp.i
+.PHONY : cpu_implementations/main.i
+
+# target to preprocess a source file
+cpu_implementations/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/cpu_implementations/main.cpp.i
+.PHONY : cpu_implementations/main.cpp.i
+
+cpu_implementations/main.s: cpu_implementations/main.cpp.s
+.PHONY : cpu_implementations/main.s
+
+# target to generate assembly for a file
+cpu_implementations/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/cpu_implementations/main.cpp.s
+.PHONY : cpu_implementations/main.cpp.s
+
 src/hadamard_product.o: src/hadamard_product.cu.o
 .PHONY : src/hadamard_product.o
 
@@ -177,6 +238,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/matrix_multiplication.o: src/matrix_multiplication.cu.o
+.PHONY : src/matrix_multiplication.o
+
+# target to build an object file
+src/matrix_multiplication.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o
+.PHONY : src/matrix_multiplication.cu.o
+
+src/matrix_multiplication.i: src/matrix_multiplication.cu.i
+.PHONY : src/matrix_multiplication.i
+
+# target to preprocess a source file
+src/matrix_multiplication.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.i
+.PHONY : src/matrix_multiplication.cu.i
+
+src/matrix_multiplication.s: src/matrix_multiplication.cu.s
+.PHONY : src/matrix_multiplication.s
+
+# target to generate assembly for a file
+src/matrix_multiplication.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.s
+.PHONY : src/matrix_multiplication.cu.s
+
+src/vector_addition.o: src/vector_addition.cu.o
+.PHONY : src/vector_addition.o
+
+# target to build an object file
+src/vector_addition.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o
+.PHONY : src/vector_addition.cu.o
+
+src/vector_addition.i: src/vector_addition.cu.i
+.PHONY : src/vector_addition.i
+
+# target to preprocess a source file
+src/vector_addition.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.i
+.PHONY : src/vector_addition.cu.i
+
+src/vector_addition.s: src/vector_addition.cu.s
+.PHONY : src/vector_addition.s
+
+# target to generate assembly for a file
+src/vector_addition.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.s
+.PHONY : src/vector_addition.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,13 +294,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... CPUMatrixLib"
 	@echo "... CudaMatrixLib"
+	@echo "... cpu_implementations/hadamard_product.o"
+	@echo "... cpu_implementations/hadamard_product.i"
+	@echo "... cpu_implementations/hadamard_product.s"
+	@echo "... cpu_implementations/main.o"
+	@echo "... cpu_implementations/main.i"
+	@echo "... cpu_implementations/main.s"
 	@echo "... src/hadamard_product.o"
 	@echo "... src/hadamard_product.i"
 	@echo "... src/hadamard_product.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/matrix_multiplication.o"
+	@echo "... src/matrix_multiplication.i"
+	@echo "... src/matrix_multiplication.s"
+	@echo "... src/vector_addition.o"
+	@echo "... src/vector_addition.i"
+	@echo "... src/vector_addition.s"
 .PHONY : help
 
 

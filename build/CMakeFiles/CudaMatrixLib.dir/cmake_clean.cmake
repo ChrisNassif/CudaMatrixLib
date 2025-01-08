@@ -4,6 +4,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o.d"
   "CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o"
   "CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o.d"
+  "CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o"
+  "CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o.d"
+  "CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o"
+  "CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o.d"
   "CudaMatrixLib"
   "CudaMatrixLib.pdb"
 )

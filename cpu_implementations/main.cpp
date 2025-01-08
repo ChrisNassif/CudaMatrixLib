@@ -1,5 +1,4 @@
-#include "cuda_matrix_lib.h"
-#include "utils/printing_utils.hpp"
+#include "cpu_matrix_lib.h"
 
 int main( void ) {
 

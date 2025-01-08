@@ -1,5 +1,5 @@
-#ifndef CUDA_MATRIX_LIB_CUH
-#define CUDA_MATRIX_LIB_CUH
+#ifndef CPU_MATRIX_LIB_CUH
+#define CPU_MATRIX_LIB_CUH
 
 #include <vector> 
 #include <iostream>

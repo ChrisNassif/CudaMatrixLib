@@ -15,11 +15,12 @@ __global__ void hadamard_product_kernel(float* d_vector1, float* d_vector2, floa
 
 std::vector<float> hadamard_product(std::vector<float> vector1, std::vector<float> vector2) {
 
+    auto program_start_time = std::chrono::high_resolution_clock::now();
+
     if (vector1.size() != vector2.size()) {
         return std::vector<float>();
     }
     
-
     int vector_size = vector1.size();
     int* h_vector_size = &vector_size;
     int* d_vector_size;
@@ -52,29 +53,14 @@ std::vector<float> hadamard_product(std::vector<float> vector1, std::vector<floa
     cudaFree(d_output_vector);  
     cudaFree(d_vector_size);
 
-
     std::vector<float> result;
-    result.insert(result.end(), h_output_vector, h_output_vector + vector_size); 
+    result.insert(result.end(), h_output_vector, h_output_vector + vector_size);
+
+    
+    auto program_end_time = std::chrono::high_resolution_clock::now();
+    float program_duration = std::chrono::duration_cast<std::chrono::microseconds>(program_end_time - program_start_time).count();
+    std::cout << "Time (microseconds) in cuda hadamard product program: " << program_duration << std::endl;
+
     return result;
-    return std::vector<float>(10, 0);
 }
 
-
-
-
-// int main( void ) {
-
-//     int vector_size = 100000;
-//     std::vector<float> vector1(vector_size, 0);
-//     std::vector<float> vector2(vector_size, 0);
-
-//     int index;
-//     for (index = 0; index < vector_size; index++) {
-//         vector1[index] = (float)(rand() % 10);
-//         vector2[index] = (float)(rand() % 10);
-//     }
-    
-//     print_vector(hadamard_product(vector1, vector2));
-
-//     // return 0;
-// }

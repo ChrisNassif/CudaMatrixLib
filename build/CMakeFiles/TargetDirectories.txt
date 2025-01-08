@@ -1,3 +1,4 @@
 /home/animated/Projects/CudaMatrixLib/build/CMakeFiles/CudaMatrixLib.dir
+/home/animated/Projects/CudaMatrixLib/build/CMakeFiles/CPUMatrixLib.dir
 /home/animated/Projects/CudaMatrixLib/build/CMakeFiles/edit_cache.dir
 /home/animated/Projects/CudaMatrixLib/build/CMakeFiles/rebuild_cache.dir

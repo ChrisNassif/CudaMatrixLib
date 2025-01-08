@@ -97,19 +97,51 @@ CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o: CMakeFiles/CudaMatrixLib.dir/flags.make
+CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o: ../src/matrix_multiplication.cu
+CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o: CMakeFiles/CudaMatrixLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o"
+	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o -MF CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o.d -x cu -dc /home/animated/Projects/CudaMatrixLib/src/matrix_multiplication.cu -o CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o
+
+CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o: CMakeFiles/CudaMatrixLib.dir/flags.make
+CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o: ../src/vector_addition.cu
+CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o: CMakeFiles/CudaMatrixLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o"
+	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o -MF CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o.d -x cu -dc /home/animated/Projects/CudaMatrixLib/src/vector_addition.cu -o CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o
+
+CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 # Object files for target CudaMatrixLib
 CudaMatrixLib_OBJECTS = \
 "CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o" \
-"CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o"
+"CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o" \
+"CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o" \
+"CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o"
 
 # External object files for target CudaMatrixLib
 CudaMatrixLib_EXTERNAL_OBJECTS =
 
 CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o: CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o
 CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o: CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o
+CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o: CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o
+CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o: CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o
 CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o: CMakeFiles/CudaMatrixLib.dir/build.make
 CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o: CMakeFiles/CudaMatrixLib.dir/dlink.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CUDA device code CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CUDA device code CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CudaMatrixLib.dir/dlink.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -119,17 +151,21 @@ CMakeFiles/CudaMatrixLib.dir/build: CMakeFiles/CudaMatrixLib.dir/cmake_device_li
 # Object files for target CudaMatrixLib
 CudaMatrixLib_OBJECTS = \
 "CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o" \
-"CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o"
+"CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o" \
+"CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o" \
+"CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o"
 
 # External object files for target CudaMatrixLib
 CudaMatrixLib_EXTERNAL_OBJECTS =
 
 CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o
 CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o
+CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/src/matrix_multiplication.cu.o
+CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/src/vector_addition.cu.o
 CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/build.make
 CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o
 CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CudaMatrixLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CudaMatrixLib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CudaMatrixLib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/animated/Projects/CudaMatrixLib/build
 
 # The main recursive "all" target.
 all: CMakeFiles/CudaMatrixLib.dir/all
+all: CMakeFiles/CPUMatrixLib.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/CudaMatrixLib.dir/clean
+clean: CMakeFiles/CPUMatrixLib.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,12 +83,12 @@ clean: CMakeFiles/CudaMatrixLib.dir/clean
 CMakeFiles/CudaMatrixLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=1,2,3,4 "Built target CudaMatrixLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=4,5,6,7,8,9 "Built target CudaMatrixLib"
 .PHONY : CMakeFiles/CudaMatrixLib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CudaMatrixLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/animated/Projects/CudaMatrixLib/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/animated/Projects/CudaMatrixLib/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CudaMatrixLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/animated/Projects/CudaMatrixLib/build/CMakeFiles 0
 .PHONY : CMakeFiles/CudaMatrixLib.dir/rule
@@ -99,6 +101,32 @@ CudaMatrixLib: CMakeFiles/CudaMatrixLib.dir/rule
 CMakeFiles/CudaMatrixLib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/clean
 .PHONY : CMakeFiles/CudaMatrixLib.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CPUMatrixLib.dir
+
+# All Build rule for target.
+CMakeFiles/CPUMatrixLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=1,2,3 "Built target CPUMatrixLib"
+.PHONY : CMakeFiles/CPUMatrixLib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CPUMatrixLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/animated/Projects/CudaMatrixLib/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CPUMatrixLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/animated/Projects/CudaMatrixLib/build/CMakeFiles 0
+.PHONY : CMakeFiles/CPUMatrixLib.dir/rule
+
+# Convenience name for target.
+CPUMatrixLib: CMakeFiles/CPUMatrixLib.dir/rule
+.PHONY : CPUMatrixLib
+
+# clean rule for target.
+CMakeFiles/CPUMatrixLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPUMatrixLib.dir/build.make CMakeFiles/CPUMatrixLib.dir/clean
+.PHONY : CMakeFiles/CPUMatrixLib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
