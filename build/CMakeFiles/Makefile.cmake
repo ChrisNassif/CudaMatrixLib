@@ -56,5 +56,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/CudaMatrixLib.dir/DependInfo.cmake"
-  "CMakeFiles/CPUMatrixLib.dir/DependInfo.cmake"
+  "CMakeFiles/unit_tests.dir/DependInfo.cmake"
   )

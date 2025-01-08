@@ -10,7 +10,7 @@ __global__ void vector_addition_kernel(float* d_vector1, float* d_vector2, float
 }
 
 
-std::vector<float> vector_addition(std::vector<float> vector1, std::vector<float> vector2) {
+std::vector<float> CudaMatrixLib::vector_addition(std::vector<float> vector1, std::vector<float> vector2) {
 
     if (vector1.size() != vector2.size()) {
         return std::vector<float>();

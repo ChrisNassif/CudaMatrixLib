@@ -1,4 +1,5 @@
-#include "cuda_matrix_lib.h"
+#include "cpu_implementations/cpu_matrix_lib.h"
+#include "cuda_implementations/cuda_matrix_lib.h"
 #include "utils/printing_utils.hpp"
 
 int main( void ) {
@@ -13,7 +14,8 @@ int main( void ) {
         vector2[index] = (float)(rand() % 10);
     }
     
-    hadamard_product(vector1, vector2);
+    CudaMatrixLib::hadamard_product(vector1, vector2);
+    CPUMatrixLib::hadamard_product(vector1, vector2);
 
-    // return 0;
+    return 0;
 }

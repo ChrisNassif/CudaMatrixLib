@@ -1,7 +1,7 @@
 #include "cpu_matrix_lib.h"
 #include <chrono>
 
-std::vector<float> hadamard_product(std::vector<float> vector1, std::vector<float> vector2) {
+std::vector<float> CPUMatrixLib::hadamard_product(std::vector<float> vector1, std::vector<float> vector2) {
     
     auto program_start_time = std::chrono::high_resolution_clock::now();
 

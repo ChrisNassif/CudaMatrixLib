@@ -1,5 +1,5 @@
-CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o: \
- /home/animated/Projects/CudaMatrixLib/src/main.cpp \
+CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/hadamard_product.cpp.o: \
+ /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/hadamard_product.cpp \
  /usr/include/stdc-predef.h \
  /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/cpu_matrix_lib.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
@@ -150,6 +150,6 @@ CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/cuda_matrix_lib.h \
- /home/animated/Projects/CudaMatrixLib/src/utils/printing_utils.hpp
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h
