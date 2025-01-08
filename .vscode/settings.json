@@ -59,7 +59,13 @@
         "thread": "cpp",
         "typeinfo": "cpp",
         "__nullptr": "cpp",
-        "__split_buffer": "cpp"
+        "__split_buffer": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "queue": "cpp",
+        "__locale": "cpp",
+        "helper_function_library.hpp": "c",
+        "*.tpp": "cpp"
     },
     "C_Cpp.default.compilerPath": "/usr/bin/g++"
 }

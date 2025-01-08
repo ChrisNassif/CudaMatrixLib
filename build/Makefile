@@ -169,6 +169,33 @@ src/cpu_implementations/cpu_matrix_lib.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s
 .PHONY : src/cpu_implementations/cpu_matrix_lib.cpp.s
 
+src/cuda_implementations/cuda_kernels.o: src/cuda_implementations/cuda_kernels.cu.o
+.PHONY : src/cuda_implementations/cuda_kernels.o
+
+# target to build an object file
+src/cuda_implementations/cuda_kernels.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/cuda_kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.o
+.PHONY : src/cuda_implementations/cuda_kernels.cu.o
+
+src/cuda_implementations/cuda_kernels.i: src/cuda_implementations/cuda_kernels.cu.i
+.PHONY : src/cuda_implementations/cuda_kernels.i
+
+# target to preprocess a source file
+src/cuda_implementations/cuda_kernels.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/cuda_kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.i
+.PHONY : src/cuda_implementations/cuda_kernels.cu.i
+
+src/cuda_implementations/cuda_kernels.s: src/cuda_implementations/cuda_kernels.cu.s
+.PHONY : src/cuda_implementations/cuda_kernels.s
+
+# target to generate assembly for a file
+src/cuda_implementations/cuda_kernels.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/cuda_kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.s
+.PHONY : src/cuda_implementations/cuda_kernels.cu.s
+
 src/cuda_implementations/dot_product.o: src/cuda_implementations/dot_product.cu.o
 .PHONY : src/cuda_implementations/dot_product.o
 
@@ -223,32 +250,32 @@ src/cuda_implementations/hadamard_product.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.s
 .PHONY : src/cuda_implementations/hadamard_product.cu.s
 
-src/cuda_implementations/matrix_multiplication.o: src/cuda_implementations/matrix_multiplication.cu.o
-.PHONY : src/cuda_implementations/matrix_multiplication.o
+src/cuda_implementations/scalar_multiplication.o: src/cuda_implementations/scalar_multiplication.cu.o
+.PHONY : src/cuda_implementations/scalar_multiplication.o
 
 # target to build an object file
-src/cuda_implementations/matrix_multiplication.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/matrix_multiplication.cu.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o
-.PHONY : src/cuda_implementations/matrix_multiplication.cu.o
+src/cuda_implementations/scalar_multiplication.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/scalar_multiplication.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o
+.PHONY : src/cuda_implementations/scalar_multiplication.cu.o
 
-src/cuda_implementations/matrix_multiplication.i: src/cuda_implementations/matrix_multiplication.cu.i
-.PHONY : src/cuda_implementations/matrix_multiplication.i
+src/cuda_implementations/scalar_multiplication.i: src/cuda_implementations/scalar_multiplication.cu.i
+.PHONY : src/cuda_implementations/scalar_multiplication.i
 
 # target to preprocess a source file
-src/cuda_implementations/matrix_multiplication.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/matrix_multiplication.cu.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.i
-.PHONY : src/cuda_implementations/matrix_multiplication.cu.i
+src/cuda_implementations/scalar_multiplication.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/scalar_multiplication.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.i
+.PHONY : src/cuda_implementations/scalar_multiplication.cu.i
 
-src/cuda_implementations/matrix_multiplication.s: src/cuda_implementations/matrix_multiplication.cu.s
-.PHONY : src/cuda_implementations/matrix_multiplication.s
+src/cuda_implementations/scalar_multiplication.s: src/cuda_implementations/scalar_multiplication.cu.s
+.PHONY : src/cuda_implementations/scalar_multiplication.s
 
 # target to generate assembly for a file
-src/cuda_implementations/matrix_multiplication.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/matrix_multiplication.cu.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.s
-.PHONY : src/cuda_implementations/matrix_multiplication.cu.s
+src/cuda_implementations/scalar_multiplication.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/scalar_multiplication.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.s
+.PHONY : src/cuda_implementations/scalar_multiplication.cu.s
 
 src/cuda_implementations/vector_addition.o: src/cuda_implementations/vector_addition.cu.o
 .PHONY : src/cuda_implementations/vector_addition.o
@@ -352,6 +379,60 @@ src/unit_tests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/unit_tests.cpp.s
 .PHONY : src/unit_tests.cpp.s
 
+src/utils/gpu_functions.o: src/utils/gpu_functions.cu.o
+.PHONY : src/utils/gpu_functions.o
+
+# target to build an object file
+src/utils/gpu_functions.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/utils/gpu_functions.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o
+.PHONY : src/utils/gpu_functions.cu.o
+
+src/utils/gpu_functions.i: src/utils/gpu_functions.cu.i
+.PHONY : src/utils/gpu_functions.i
+
+# target to preprocess a source file
+src/utils/gpu_functions.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/utils/gpu_functions.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.i
+.PHONY : src/utils/gpu_functions.cu.i
+
+src/utils/gpu_functions.s: src/utils/gpu_functions.cu.s
+.PHONY : src/utils/gpu_functions.s
+
+# target to generate assembly for a file
+src/utils/gpu_functions.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/utils/gpu_functions.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.s
+.PHONY : src/utils/gpu_functions.cu.s
+
+src/utils/helper_function_library.o: src/utils/helper_function_library.cpp.o
+.PHONY : src/utils/helper_function_library.o
+
+# target to build an object file
+src/utils/helper_function_library.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/utils/helper_function_library.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o
+.PHONY : src/utils/helper_function_library.cpp.o
+
+src/utils/helper_function_library.i: src/utils/helper_function_library.cpp.i
+.PHONY : src/utils/helper_function_library.i
+
+# target to preprocess a source file
+src/utils/helper_function_library.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/utils/helper_function_library.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.i
+.PHONY : src/utils/helper_function_library.cpp.i
+
+src/utils/helper_function_library.s: src/utils/helper_function_library.cpp.s
+.PHONY : src/utils/helper_function_library.s
+
+# target to generate assembly for a file
+src/utils/helper_function_library.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/utils/helper_function_library.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.s
+.PHONY : src/utils/helper_function_library.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -365,15 +446,18 @@ help:
 	@echo "... src/cpu_implementations/cpu_matrix_lib.o"
 	@echo "... src/cpu_implementations/cpu_matrix_lib.i"
 	@echo "... src/cpu_implementations/cpu_matrix_lib.s"
+	@echo "... src/cuda_implementations/cuda_kernels.o"
+	@echo "... src/cuda_implementations/cuda_kernels.i"
+	@echo "... src/cuda_implementations/cuda_kernels.s"
 	@echo "... src/cuda_implementations/dot_product.o"
 	@echo "... src/cuda_implementations/dot_product.i"
 	@echo "... src/cuda_implementations/dot_product.s"
 	@echo "... src/cuda_implementations/hadamard_product.o"
 	@echo "... src/cuda_implementations/hadamard_product.i"
 	@echo "... src/cuda_implementations/hadamard_product.s"
-	@echo "... src/cuda_implementations/matrix_multiplication.o"
-	@echo "... src/cuda_implementations/matrix_multiplication.i"
-	@echo "... src/cuda_implementations/matrix_multiplication.s"
+	@echo "... src/cuda_implementations/scalar_multiplication.o"
+	@echo "... src/cuda_implementations/scalar_multiplication.i"
+	@echo "... src/cuda_implementations/scalar_multiplication.s"
 	@echo "... src/cuda_implementations/vector_addition.o"
 	@echo "... src/cuda_implementations/vector_addition.i"
 	@echo "... src/cuda_implementations/vector_addition.s"
@@ -386,6 +470,12 @@ help:
 	@echo "... src/unit_tests.o"
 	@echo "... src/unit_tests.i"
 	@echo "... src/unit_tests.s"
+	@echo "... src/utils/gpu_functions.o"
+	@echo "... src/utils/gpu_functions.i"
+	@echo "... src/utils/gpu_functions.s"
+	@echo "... src/utils/helper_function_library.o"
+	@echo "... src/utils/helper_function_library.i"
+	@echo "... src/utils/helper_function_library.s"
 .PHONY : help
 
 

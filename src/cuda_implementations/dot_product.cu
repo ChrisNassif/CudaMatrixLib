@@ -1,5 +1,10 @@
 #include "cuda_matrix_lib.h"
+#include "cuda_kernels.h"
 
-float CudaMatrixLib::dot_product(std::vector<float> vector1, std::vector<float> vector2) {
-    return CudaMatrixLib::vector_sum(CudaMatrixLib::hadamard_product(vector1, vector2));
+float CudaMatrixLib::dot_product(std::vector<float> input_vector1, std::vector<float> input_vector2) {
+
+    if (input_vector1.size() != input_vector2.size()) {
+        return -1;
+    }
+    return -1;
 }

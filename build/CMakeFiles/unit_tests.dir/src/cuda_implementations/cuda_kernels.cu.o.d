@@ -1,4 +1,4 @@
-CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/matrix_multiplication.cu.o : /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/matrix_multiplication.cu \
+CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.o : /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/cuda_kernels.cu \
     /usr/include/stdc-predef.h \
     /usr/include/cuda_runtime.h \
     /usr/include/crt/host_config.h \
@@ -176,4 +176,10 @@ CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/matrix_multiplication.cu.o
     /usr/include/texture_fetch_functions.h \
     /usr/include/texture_indirect_functions.h \
     /usr/include/surface_indirect_functions.h \
-    /usr/include/device_launch_parameters.h
+    /usr/include/device_launch_parameters.h \
+    /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/cuda_kernels.h \
+    /usr/include/cuda.h \
+    /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+    /usr/include/stdint.h \
+    /usr/include/x86_64-linux-gnu/bits/wchar.h \
+    /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h

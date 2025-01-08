@@ -40,6 +40,7 @@ add_executable(unit_tests
     ${utils_files}
 )
 
+
 # Set target properties for CUDA
 set_target_properties(CudaMatrixLib PROPERTIES
     CUDA_STANDARD 17
