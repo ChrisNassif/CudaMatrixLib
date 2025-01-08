@@ -169,6 +169,33 @@ src/cpu_implementations/cpu_matrix_lib.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s
 .PHONY : src/cpu_implementations/cpu_matrix_lib.cpp.s
 
+src/cuda_implementations/dot_product.o: src/cuda_implementations/dot_product.cu.o
+.PHONY : src/cuda_implementations/dot_product.o
+
+# target to build an object file
+src/cuda_implementations/dot_product.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/dot_product.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o
+.PHONY : src/cuda_implementations/dot_product.cu.o
+
+src/cuda_implementations/dot_product.i: src/cuda_implementations/dot_product.cu.i
+.PHONY : src/cuda_implementations/dot_product.i
+
+# target to preprocess a source file
+src/cuda_implementations/dot_product.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/dot_product.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.i
+.PHONY : src/cuda_implementations/dot_product.cu.i
+
+src/cuda_implementations/dot_product.s: src/cuda_implementations/dot_product.cu.s
+.PHONY : src/cuda_implementations/dot_product.s
+
+# target to generate assembly for a file
+src/cuda_implementations/dot_product.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/dot_product.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.s
+.PHONY : src/cuda_implementations/dot_product.cu.s
+
 src/cuda_implementations/hadamard_product.o: src/cuda_implementations/hadamard_product.cu.o
 .PHONY : src/cuda_implementations/hadamard_product.o
 
@@ -338,6 +365,9 @@ help:
 	@echo "... src/cpu_implementations/cpu_matrix_lib.o"
 	@echo "... src/cpu_implementations/cpu_matrix_lib.i"
 	@echo "... src/cpu_implementations/cpu_matrix_lib.s"
+	@echo "... src/cuda_implementations/dot_product.o"
+	@echo "... src/cuda_implementations/dot_product.i"
+	@echo "... src/cuda_implementations/dot_product.s"
 	@echo "... src/cuda_implementations/hadamard_product.o"
 	@echo "... src/cuda_implementations/hadamard_product.i"
 	@echo "... src/cuda_implementations/hadamard_product.s"

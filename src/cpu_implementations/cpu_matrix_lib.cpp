@@ -1,4 +1,5 @@
 #include "cpu_matrix_lib.h"
+#include "../utils/helper_function_library.hpp"
 #include <chrono>
 
 std::vector<float> CPUMatrixLib::hadamard_product(std::vector<float> vector1, std::vector<float> vector2) {
@@ -54,15 +55,21 @@ float CPUMatrixLib::vector_sum(std::vector<float> vector) {
 
     int vector_size = vector.size();
 
-    float result_vector = 0;
+    double result = 0;
 
     for (int index = 0; index < vector_size; index++) {
-        result_vector += vector[index];
+        result += vector[index];
     }
 
     auto program_end_time = std::chrono::high_resolution_clock::now();
     float program_duration = std::chrono::duration_cast<std::chrono::microseconds>(program_end_time - program_start_time).count();
     std::cout << "Time (microseconds) in cpu vector sum product program: " << program_duration << std::endl;
+    // print_vector(result_vector);
+    return result;
+}
 
-    return result_vector;
+
+
+float CPUMatrixLib::dot_product(std::vector<float> vector1, std::vector<float> vector2) {
+    return CPUMatrixLib::vector_sum(CPUMatrixLib::hadamard_product(vector1, vector2));
 }

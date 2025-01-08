@@ -1,3 +1,6 @@
+#ifndef HELPER_FUNCTION_LIBRARY_HPP
+#define HELPER_FUNCTION_LIBRARY_HPP
+
 #include <vector>
 #include <iostream>
 
@@ -30,3 +33,5 @@ bool are_vectors_equal(std::vector<float> vector1, std::vector<float> vector2) {
 
     return true;
 }
+
+#endif

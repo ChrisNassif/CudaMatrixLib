@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/dot_product.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o.d"
   "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/hadamard_product.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o.d"
   "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/matrix_multiplication.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o.d"
   "/home/animated/Projects/CudaMatrixLib/src/cuda_implementations/vector_addition.cu" "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o" "gcc" "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o.d"

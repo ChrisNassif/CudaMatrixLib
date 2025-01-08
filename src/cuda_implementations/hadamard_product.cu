@@ -1,6 +1,5 @@
 #include <cuda.h>
 #include "cuda_matrix_lib.h"
-#include <chrono>
 
 #define OPERATIONS_PER_THREAD 1024
 
@@ -8,22 +7,17 @@ __global__ void hadamard_product_kernel(float* d_vector1, float* d_vector2, floa
     const int thread_id = threadIdx.x + blockIdx.x * blockDim.x;
     const int thread_start_index = thread_id * OPERATIONS_PER_THREAD;
 
-    for (int index = 0; index < OPERATIONS_PER_THREAD; index++) {
-        int input_vector_index = thread_start_index + index;
+    for (int operation_index = 0; operation_index < OPERATIONS_PER_THREAD; operation_index++) {
+        int vector_index = thread_start_index + operation_index;
 
-        if (input_vector_index >= *vector_size) return;
+        if (vector_index >= *vector_size) return;
 
-        d_output_vector[input_vector_index] = d_vector1[input_vector_index] * d_vector2[input_vector_index];
+        d_output_vector[vector_index] = d_vector1[vector_index] * d_vector2[vector_index];
     }
 }
 
 
 std::vector<float> CudaMatrixLib::hadamard_product(std::vector<float> vector1, std::vector<float> vector2) {
-
-    int device_count;
-    cudaGetDeviceCount(&device_count);
-
-    std::cout << device_count << std::endl;
 
     // auto program_start_time = std::chrono::high_resolution_clock::now();
 

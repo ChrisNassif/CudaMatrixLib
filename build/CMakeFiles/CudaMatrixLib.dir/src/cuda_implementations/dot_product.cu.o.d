@@ -1,4 +1,4 @@
-CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o : /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/vector_sum.cu \
+CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/dot_product.cu.o : /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/dot_product.cu \
     /usr/include/stdc-predef.h \
     /usr/include/cuda_runtime.h \
     /usr/include/crt/host_config.h \

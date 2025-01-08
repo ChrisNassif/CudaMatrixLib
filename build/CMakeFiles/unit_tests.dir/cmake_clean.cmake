@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o"
   "CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o"
+  "CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o.d"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o.d"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/matrix_multiplication.cu.o"

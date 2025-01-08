@@ -274,4 +274,8 @@ CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o : /home/
     /usr/include/c++/11/bits/basic_ios.tcc \
     /usr/include/c++/11/bits/ostream.tcc \
     /usr/include/c++/11/istream \
-    /usr/include/c++/11/bits/istream.tcc
+    /usr/include/c++/11/bits/istream.tcc \
+    /usr/include/c++/11/chrono \
+    /usr/include/c++/11/ratio \
+    /usr/include/c++/11/ctime \
+    /usr/include/c++/11/bits/parse_numbers.h

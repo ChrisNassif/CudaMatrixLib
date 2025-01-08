@@ -7,12 +7,12 @@ __global__ void vector_addition_kernel(float* d_vector1, float* d_vector2, float
     const int thread_id = threadIdx.x + blockIdx.x * blockDim.x;
     const int thread_start_index = thread_id * OPERATIONS_PER_THREAD;
 
-    for (int index = 0; index < OPERATIONS_PER_THREAD; index++) {
-        int input_vector_index = thread_start_index + index;
+    for (int operation_index = 0; operation_index < OPERATIONS_PER_THREAD; operation_index++) {
+        int vector_index = thread_start_index + operation_index;
 
-        if (input_vector_index >= *vector_size) return;
+        if (vector_index >= *vector_size) return;
 
-        d_output_vector[input_vector_index] = d_vector1[input_vector_index] + d_vector2[input_vector_index];
+        d_output_vector[vector_index] = d_vector1[vector_index] + d_vector2[vector_index];
     }
 
 }
@@ -48,7 +48,12 @@ std::vector<float> CudaMatrixLib::vector_addition(std::vector<float> vector1, st
     cudaMemcpy(d_vector2, h_vector2, sizeof(float) * vector_size, cudaMemcpyHostToDevice);
     cudaMemcpy(d_vector_size, h_vector_size, sizeof(int), cudaMemcpyHostToDevice);
     
+    auto program_start_time = std::chrono::high_resolution_clock::now();
+
     vector_addition_kernel <<<block_count, thread_count>>> (d_vector1, d_vector2, d_output_vector, d_vector_size);
+    cudaDeviceSynchronize();
+
+    auto program_end_time = std::chrono::high_resolution_clock::now();
 
     cudaMemcpy(h_output_vector, d_output_vector, sizeof(float) * vector_size, cudaMemcpyDeviceToHost);
 
@@ -60,5 +65,9 @@ std::vector<float> CudaMatrixLib::vector_addition(std::vector<float> vector1, st
 
     std::vector<float> result;
     result.insert(result.end(), h_output_vector, h_output_vector + vector_size); 
+
+    float program_duration = std::chrono::duration_cast<std::chrono::microseconds>(program_end_time - program_start_time).count();
+    std::cout << "Time (microseconds) in cuda vector addition program: " << program_duration << std::endl;
+
     return result;
 }
