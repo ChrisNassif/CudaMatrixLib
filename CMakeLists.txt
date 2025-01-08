@@ -13,8 +13,8 @@ set(CUDA_ARCHITECTURES 75)
 # Add an executable that uses CUDA
 add_executable(CudaMatrixLib 
     src/main.cpp
+    src/cuda_matrix_lib.h
     src/hadamard_product.cu
-    src/cuda_matrix_lib.cuh
     src/utils/printing_utils.hpp
 )
 

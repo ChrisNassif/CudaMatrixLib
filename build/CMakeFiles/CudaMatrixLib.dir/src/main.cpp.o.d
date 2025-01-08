@@ -1,7 +1,7 @@
 CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o: \
  /home/animated/Projects/CudaMatrixLib/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/animated/Projects/CudaMatrixLib/src/cuda_matrix_lib.cuh \
+ /home/animated/Projects/CudaMatrixLib/src/cuda_matrix_lib.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

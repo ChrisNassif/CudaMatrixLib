@@ -185,7 +185,7 @@ CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o: ../src/hadamard_product.
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  ../src/cuda_matrix_lib.cuh \
+  ../src/cuda_matrix_lib.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
@@ -286,7 +286,7 @@ CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o: ../src/hadamard_product.
 
 CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
-  ../src/cuda_matrix_lib.cuh \
+  ../src/cuda_matrix_lib.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -469,8 +469,11 @@ CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  ../src/utils/printing_utils.hpp
 
+
+../src/utils/printing_utils.hpp:
 
 ../src/main.cpp:
 
@@ -669,8 +672,6 @@ CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/crt/host_config.h:
-
-../src/cuda_matrix_lib.cuh:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
@@ -921,6 +922,8 @@ CMakeFiles/CudaMatrixLib.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/cuda.h:
+
+../src/cuda_matrix_lib.h:
 
 /usr/include/c++/11/vector:
 

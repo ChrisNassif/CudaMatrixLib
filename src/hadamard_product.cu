@@ -1,5 +1,5 @@
 #include <cuda.h>
-#include "cuda_matrix_lib.cuh"
+#include "cuda_matrix_lib.h"
 #include <chrono>
 
 

@@ -182,7 +182,7 @@ CMakeFiles/CudaMatrixLib.dir/src/hadamard_product.cu.o : /home/animated/Projects
     /usr/include/stdint.h \
     /usr/include/x86_64-linux-gnu/bits/wchar.h \
     /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-    /home/animated/Projects/CudaMatrixLib/src/cuda_matrix_lib.cuh \
+    /home/animated/Projects/CudaMatrixLib/src/cuda_matrix_lib.h \
     /usr/include/c++/11/vector \
     /usr/include/c++/11/bits/allocator.h \
     /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
