@@ -139,10 +139,24 @@ CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o: ../src/cuda_implementations/naive_matrix_multiplication.cu
+CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o"
+	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o -MF CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o.d -x cu -c /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/naive_matrix_multiplication.cu -o CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o
+
+CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o: ../src/cuda_implementations/scalar_multiplication.cu
 CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o"
 	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o -MF CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o.d -x cu -c /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/scalar_multiplication.cu -o CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o
 
 CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.s: c
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o: ../src/cuda_implementations/vector_addition.cu
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o"
 	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o -MF CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o.d -x cu -c /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/vector_addition.cu -o CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o
 
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.s: cmake_f
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o: ../src/cuda_implementations/vector_sum.cu
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CUDA object CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o"
 	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o -MF CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o.d -x cu -c /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/vector_sum.cu -o CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o
 
 CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.s: cmake_force
 CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o: ../src/cpu_implementations/cpu_matrix_lib.cpp
 CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o -MF CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o.d -o CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o -c /home/animated/Projects/CudaMatrixLib/src/cpu_implementations/cpu_matrix_lib.cpp
 
 CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s: cmake_fo
 CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o: ../src/utils/gpu_functions.cu
 CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CUDA object CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CUDA object CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o"
 	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o -MF CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o.d -x cu -c /home/animated/Projects/CudaMatrixLib/src/utils/gpu_functions.cu -o CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o
 
 CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.s: cmake_force
 CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o: ../src/utils/helper_function_library.cpp
 CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o: CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o -MF CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o.d -o CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o -c /home/animated/Projects/CudaMatrixLib/src/utils/helper_function_library.cpp
 
 CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.i: cmake_force
@@ -230,6 +244,7 @@ unit_tests_OBJECTS = \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.o" \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o" \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o" \
+"CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o" \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o" \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o" \
 "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o" \
@@ -245,6 +260,7 @@ unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/apply_elementwise
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o
+unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_sum.cu.o
@@ -253,7 +269,7 @@ unit_tests: CMakeFiles/unit_tests.dir/src/utils/gpu_functions.cu.o
 unit_tests: CMakeFiles/unit_tests.dir/src/utils/helper_function_library.cpp.o
 unit_tests: CMakeFiles/unit_tests.dir/build.make
 unit_tests: CMakeFiles/unit_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/animated/Projects/CudaMatrixLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable unit_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

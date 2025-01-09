@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o.d"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.o.d"
+  "CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o"
+  "CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o.d"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/scalar_multiplication.cu.o.d"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/vector_addition.cu.o"

@@ -277,6 +277,33 @@ src/cuda_implementations/hadamard_product.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/hadamard_product.cu.s
 .PHONY : src/cuda_implementations/hadamard_product.cu.s
 
+src/cuda_implementations/naive_matrix_multiplication.o: src/cuda_implementations/naive_matrix_multiplication.cu.o
+.PHONY : src/cuda_implementations/naive_matrix_multiplication.o
+
+# target to build an object file
+src/cuda_implementations/naive_matrix_multiplication.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.o
+.PHONY : src/cuda_implementations/naive_matrix_multiplication.cu.o
+
+src/cuda_implementations/naive_matrix_multiplication.i: src/cuda_implementations/naive_matrix_multiplication.cu.i
+.PHONY : src/cuda_implementations/naive_matrix_multiplication.i
+
+# target to preprocess a source file
+src/cuda_implementations/naive_matrix_multiplication.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplication.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.i
+.PHONY : src/cuda_implementations/naive_matrix_multiplication.cu.i
+
+src/cuda_implementations/naive_matrix_multiplication.s: src/cuda_implementations/naive_matrix_multiplication.cu.s
+.PHONY : src/cuda_implementations/naive_matrix_multiplication.s
+
+# target to generate assembly for a file
+src/cuda_implementations/naive_matrix_multiplication.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplication.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/naive_matrix_multiplication.cu.s
+.PHONY : src/cuda_implementations/naive_matrix_multiplication.cu.s
+
 src/cuda_implementations/scalar_multiplication.o: src/cuda_implementations/scalar_multiplication.cu.o
 .PHONY : src/cuda_implementations/scalar_multiplication.o
 
@@ -485,6 +512,9 @@ help:
 	@echo "... src/cuda_implementations/hadamard_product.o"
 	@echo "... src/cuda_implementations/hadamard_product.i"
 	@echo "... src/cuda_implementations/hadamard_product.s"
+	@echo "... src/cuda_implementations/naive_matrix_multiplication.o"
+	@echo "... src/cuda_implementations/naive_matrix_multiplication.i"
+	@echo "... src/cuda_implementations/naive_matrix_multiplication.s"
 	@echo "... src/cuda_implementations/scalar_multiplication.o"
 	@echo "... src/cuda_implementations/scalar_multiplication.i"
 	@echo "... src/cuda_implementations/scalar_multiplication.s"
