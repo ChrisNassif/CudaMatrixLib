@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o"
   "CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/src/cuda_implementations/apply_elementwise_function.cu.o"
+  "CMakeFiles/unit_tests.dir/src/cuda_implementations/apply_elementwise_function.cu.o.d"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.o"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/cuda_kernels.cu.o.d"
   "CMakeFiles/unit_tests.dir/src/cuda_implementations/dot_product.cu.o"

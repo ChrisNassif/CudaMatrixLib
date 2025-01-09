@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CudaMatrixLib.dir/cmake_device_link.o"
   "CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o"
   "CMakeFiles/CudaMatrixLib.dir/src/cpu_implementations/cpu_matrix_lib.cpp.o.d"
+  "CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/apply_elementwise_function.cu.o"
+  "CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/apply_elementwise_function.cu.o.d"
   "CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/cuda_kernels.cu.o"
   "CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/cuda_kernels.cu.o.d"
   "CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/dot_product.cu.o"

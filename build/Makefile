@@ -169,6 +169,33 @@ src/cpu_implementations/cpu_matrix_lib.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cpu_implementations/cpu_matrix_lib.cpp.s
 .PHONY : src/cpu_implementations/cpu_matrix_lib.cpp.s
 
+src/cuda_implementations/apply_elementwise_function.o: src/cuda_implementations/apply_elementwise_function.cu.o
+.PHONY : src/cuda_implementations/apply_elementwise_function.o
+
+# target to build an object file
+src/cuda_implementations/apply_elementwise_function.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/apply_elementwise_function.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/apply_elementwise_function.cu.o
+.PHONY : src/cuda_implementations/apply_elementwise_function.cu.o
+
+src/cuda_implementations/apply_elementwise_function.i: src/cuda_implementations/apply_elementwise_function.cu.i
+.PHONY : src/cuda_implementations/apply_elementwise_function.i
+
+# target to preprocess a source file
+src/cuda_implementations/apply_elementwise_function.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/apply_elementwise_function.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/apply_elementwise_function.cu.i
+.PHONY : src/cuda_implementations/apply_elementwise_function.cu.i
+
+src/cuda_implementations/apply_elementwise_function.s: src/cuda_implementations/apply_elementwise_function.cu.s
+.PHONY : src/cuda_implementations/apply_elementwise_function.s
+
+# target to generate assembly for a file
+src/cuda_implementations/apply_elementwise_function.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CudaMatrixLib.dir/build.make CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/apply_elementwise_function.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/cuda_implementations/apply_elementwise_function.cu.s
+.PHONY : src/cuda_implementations/apply_elementwise_function.cu.s
+
 src/cuda_implementations/cuda_kernels.o: src/cuda_implementations/cuda_kernels.cu.o
 .PHONY : src/cuda_implementations/cuda_kernels.o
 
@@ -446,6 +473,9 @@ help:
 	@echo "... src/cpu_implementations/cpu_matrix_lib.o"
 	@echo "... src/cpu_implementations/cpu_matrix_lib.i"
 	@echo "... src/cpu_implementations/cpu_matrix_lib.s"
+	@echo "... src/cuda_implementations/apply_elementwise_function.o"
+	@echo "... src/cuda_implementations/apply_elementwise_function.i"
+	@echo "... src/cuda_implementations/apply_elementwise_function.s"
 	@echo "... src/cuda_implementations/cuda_kernels.o"
 	@echo "... src/cuda_implementations/cuda_kernels.i"
 	@echo "... src/cuda_implementations/cuda_kernels.s"
