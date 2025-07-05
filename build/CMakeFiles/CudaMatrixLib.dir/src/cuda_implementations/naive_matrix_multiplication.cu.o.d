@@ -33,35 +33,60 @@ CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplicatio
     /usr/include/channel_descriptor.h \
     /usr/include/cuda_runtime_api.h \
     /usr/include/cuda_device_runtime_api.h \
+    /usr/include/c++/11/stdlib.h \
+    /usr/include/c++/11/cstdlib \
+    /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+    /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+    /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+    /usr/include/c++/11/pstl/pstl_config.h \
+    /usr/include/stdlib.h \
+    /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+    /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+    /usr/include/x86_64-linux-gnu/bits/floatn.h \
+    /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+    /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+    /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+    /usr/include/x86_64-linux-gnu/sys/types.h \
+    /usr/include/x86_64-linux-gnu/bits/types.h \
+    /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+    /usr/include/x86_64-linux-gnu/bits/time64.h \
+    /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+    /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+    /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+    /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+    /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+    /usr/include/endian.h \
+    /usr/include/x86_64-linux-gnu/bits/endian.h \
+    /usr/include/x86_64-linux-gnu/bits/endianness.h \
+    /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+    /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+    /usr/include/x86_64-linux-gnu/sys/select.h \
+    /usr/include/x86_64-linux-gnu/bits/select.h \
+    /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+    /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+    /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+    /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+    /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+    /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+    /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+    /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+    /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+    /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+    /usr/include/alloca.h \
+    /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+    /usr/include/c++/11/bits/std_abs.h \
     /usr/include/driver_functions.h \
     /usr/include/vector_functions.h \
     /usr/include/vector_functions.hpp \
     /usr/include/crt/common_functions.h \
     /usr/include/string.h \
-    /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-    /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
     /usr/include/strings.h \
     /usr/include/time.h \
     /usr/include/x86_64-linux-gnu/bits/time.h \
-    /usr/include/x86_64-linux-gnu/bits/types.h \
-    /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-    /usr/include/x86_64-linux-gnu/bits/time64.h \
     /usr/include/x86_64-linux-gnu/bits/timex.h \
-    /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-    /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-    /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
     /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-    /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-    /usr/include/x86_64-linux-gnu/bits/endian.h \
-    /usr/include/x86_64-linux-gnu/bits/endianness.h \
-    /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-    /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
     /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
     /usr/include/c++/11/new \
-    /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-    /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
-    /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
-    /usr/include/c++/11/pstl/pstl_config.h \
     /usr/include/c++/11/bits/exception.h \
     /usr/include/stdio.h \
     /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
@@ -73,31 +98,6 @@ CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplicatio
     /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
     /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
     /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-    /usr/include/x86_64-linux-gnu/bits/floatn.h \
-    /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-    /usr/include/c++/11/stdlib.h \
-    /usr/include/c++/11/cstdlib \
-    /usr/include/stdlib.h \
-    /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-    /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-    /usr/include/x86_64-linux-gnu/sys/types.h \
-    /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-    /usr/include/endian.h \
-    /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-    /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-    /usr/include/x86_64-linux-gnu/sys/select.h \
-    /usr/include/x86_64-linux-gnu/bits/select.h \
-    /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-    /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-    /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-    /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-    /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-    /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-    /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-    /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-    /usr/include/alloca.h \
-    /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-    /usr/include/c++/11/bits/std_abs.h \
     /usr/include/assert.h \
     /usr/include/crt/math_functions.h \
     /usr/include/c++/11/math.h \
@@ -144,8 +144,6 @@ CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplicatio
     /usr/include/c++/11/tr1/poly_laguerre.tcc \
     /usr/include/c++/11/tr1/riemann_zeta.tcc \
     /usr/include/crt/math_functions.hpp \
-    /usr/include/cuda_surface_types.h \
-    /usr/include/cuda_texture_types.h \
     /usr/include/crt/device_functions.h \
     /usr/include/crt/device_functions.hpp \
     /usr/include/device_atomic_functions.h \
@@ -172,11 +170,15 @@ CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplicatio
     /usr/include/crt/sm_70_rt.hpp \
     /usr/include/crt/sm_80_rt.h \
     /usr/include/crt/sm_80_rt.hpp \
-    /usr/include/surface_functions.h \
-    /usr/include/texture_fetch_functions.h \
+    /usr/include/crt/sm_90_rt.h \
+    /usr/include/crt/sm_90_rt.hpp \
     /usr/include/texture_indirect_functions.h \
     /usr/include/surface_indirect_functions.h \
+    /usr/include/crt/cudacc_ext.h \
     /usr/include/device_launch_parameters.h \
+    /usr/include/c++/11/utility \
+    /usr/include/c++/11/bits/stl_relops.h \
+    /usr/include/c++/11/initializer_list \
     /home/animated/Projects/CudaMatrixLib/src/cuda_implementations/cuda_matrix_lib.h \
     /usr/include/c++/11/iostream \
     /usr/include/c++/11/ostream \
@@ -201,6 +203,7 @@ CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplicatio
     /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
     /usr/include/stdint.h \
     /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+    /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
     /usr/include/c++/11/bits/localefwd.h \
     /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
     /usr/include/c++/11/clocale \
@@ -231,7 +234,6 @@ CMakeFiles/CudaMatrixLib.dir/src/cuda_implementations/naive_matrix_multiplicatio
     /usr/include/c++/11/bits/stl_function.h \
     /usr/include/c++/11/backward/binders.h \
     /usr/include/c++/11/bits/range_access.h \
-    /usr/include/c++/11/initializer_list \
     /usr/include/c++/11/bits/basic_string.h \
     /usr/include/c++/11/ext/alloc_traits.h \
     /usr/include/c++/11/bits/alloc_traits.h \
